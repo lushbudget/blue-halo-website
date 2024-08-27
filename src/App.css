@@ -3,17 +3,153 @@ h1 {
   font-size: 30px;
   color: white;
   margin-top: -50px;
-  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center; 
+  height: 100vh; 
+  text-align: center; 
+}
+.reganButton {
+  background-color: #fafafa; 
+  opacity: .6;
+  color: white; 
+  padding: 15px 32px; 
+  font-size: 16px;
+  border: none; 
+  border-radius: 40px; 
+  cursor: pointer; 
+  transition: transform 0.1s ease, box-shadow 0.1s ease; 
+  height: 200px;
+  outline: none;
+}
+.reganButton:active {
+  transform: translateY(4px); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.reganButton:focus {
+  outline: none; 
+}
+
+
+.progressButton {
+  font-size: 30px;
+  border-color: blanchedalmond;
+  border-radius: 40px; 
+  margin-bottom: 30px;
+
+}
+
+.progressButton:active {
+  transform: translateY(4px); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+.progressButton:active,
+.progressButton:focus,
+.progressButton:hover {
+  outline: none; 
+}
+
+.navbar {
+  height:100px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1))
+}
+
+
+.homeTitle {
+text-align: center;
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .no-underline {
   text-decoration: none;
+  cursor: pointer; 
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
+
+
+.no-underline:active,
+.no-underline:focus,
+.no-underline:hover {
+  text-decoration: none;
+}
+
+
+.eezBackground {
+  background-image: url('./assets/eezBG.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 200px;
+  justify-content: center;
+  align-items: center; 
+} 
+
+/* .eezBackground {
+  background-image: url('./assets/eezBG.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  height: 100vh; 
+  width: 100%; 
+  min-height: 100vh; 
+  min-width: 100%; 
+  padding: 0;
+  margin: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: repeat;
+} */
 
 .titillium-web-regular {
   font-family: "Titillium Web", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
+.letterBlock{
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 10px 10px 20px rgba(5, 5, 5, 0.3);
+  text-align: center;
+  opacity: .5;
+  margin: 30px;
+  padding: 20px;
+}
+
+
+
+.imgBlock {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Adds a shadow */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  background-color: white; /* Optional: Ensures a background color */
+}
+
+.titleH2 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.background2 {
+  background-image: url('./assets/clownfish.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center; 
+
+}
+
 
 .background {
   background-image: url('./assets/sealshome.jpg');
@@ -24,4 +160,5 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center; 
+  
 }
